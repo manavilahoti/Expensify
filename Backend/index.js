@@ -1,9 +1,10 @@
-import { app } from "./app.js";
-import dotenv from "dotenv";
-import mongoose from "mongoose";
+const app = require("./app.js");
+const dotenv = require("dotenv");
+const mongoose = require("mongoose");
+
 
 dotenv.config({
-    path: "../.env"
+    path: "./.env"
 
 })
 const PORT =  process.env.PORT||8001;
